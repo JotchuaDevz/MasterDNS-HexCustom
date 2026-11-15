@@ -17,7 +17,7 @@ DNS-VPN server based on [MasterDnsVPN](https://github.com/masterking32/MasterDns
 ## Quick install
 
 ```bash
-sudo bash <(curl -fsSL https://raw.githubusercontent.com/JotchuaDevz/MasterDNS-HexCustom/refs/heads/main/install.sh)
+sudo apt update && sudo apt upgrade -y && sudo apt install -y wget iproute2 && wget -O install.sh https://raw.githubusercontent.com/JotchuaDevz/MasterDNS-HexCustom/refs/heads/main/install.sh && sudo bash install.sh
 ```
 
 The script detects the architecture, downloads the manager and the server, and starts the installation. It will ask for:
